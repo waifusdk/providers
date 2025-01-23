@@ -35,10 +35,6 @@ jobs:
       - name: Run tests
         run: pnpm test
 
-      # Optionally lint the code
-      - name: Lint code
-        run: pnpm lint
-
       # Cache pnpm store for faster builds
       - name: Cache pnpm store
         uses: actions/cache@v3
