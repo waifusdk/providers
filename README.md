@@ -1,6 +1,8 @@
 # W.A.I.F.U Providers
 
-A collection of TypeScript providers for various APIs, designed to make integrating with different services easy and type-safe.
+A collection of data providers which can be used to integrate with our SDK, designed to make integrating with different AI agent ecosystems easy and type-safe.
+
+We belive in the open-source model and any contributions, suggestions, issues, or improvements, are welcome!. Contributions are rewarded with $WAIFU tokens. Please refer to our github issues for more details.
 
 ## Features
 
@@ -12,7 +14,15 @@ A collection of TypeScript providers for various APIs, designed to make integrat
 ## Available Providers
 
 1. Generics
-   1.
+   1. Weather
+   2. Headlines
+2. Token
+   1. LunarCrush
+   2. Dexscreener
+   3. Whitepaper
+3. Networks
+   1. Solana
+   2. Ethereum
 
 ## Setup
 
@@ -40,7 +50,6 @@ import {
 } from "./providers";
 
 // Initialize providers with your API keys
-const weather = new WeatherProvider({ apiKey: process.env.WEATHER_API_KEY });
 const lunar = new LunarCrushProvider({
   apiKey: process.env.LUNAR_CRUSH_API_KEY,
 });
@@ -51,28 +60,6 @@ const lunar = new LunarCrushProvider({
 ```bash
 pnpm test
 ```
-
-## Development
-
-### Building the Package
-
-To build the package for both CommonJS and ESM formats:
-
-```bash
-pnpm build
-```
-
-### Releasing
-
-We use changesets for versioning and publishing. To release a new version:
-
-```bash
-pnpm release
-```
-
-This will:
-1. Build the package
-2. Publish to the registry with the new version
 
 ## Error Handling
 
@@ -88,6 +75,8 @@ try {
 ```
 
 ## Contributing
+
+Take a look at our open issues for ideas of providers to be added.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-provider`)
