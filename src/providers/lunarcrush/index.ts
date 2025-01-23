@@ -49,6 +49,25 @@ export class LunarCrushProvider extends BaseProvider {
       throw error;
     }
   }
+
+  async getSocialData(topic: string) {
+    try {
+      const response = await fetch(`${this.baseUrl}/public/topic/${topic}/v1`, {
+        headers: {
+          Authorization: `Bearer ${this.apiKey}`,
+        },
+      }).then((res) => res.json());
+      return response.data;
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        throw new Error(
+          `LunarCrush API Error: ${
+            error.response?.data?.message || error.message
+          }`
+        );
+      }
+    }
+  }
 }
 
 export default LunarCrushProvider;
