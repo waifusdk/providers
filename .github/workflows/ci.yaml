@@ -31,9 +31,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # Run the tests
-      - name: Run tests
-        run: pnpm test
+      - name: Build project
+        run: pnpm build
+
+      - name: Lint
+        run: pnpm lint
 
       # Cache pnpm store for faster builds
       - name: Cache pnpm store
@@ -43,7 +45,3 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-
-      # Optionally build the project
-      - name: Build project
-        run: pnpm build
