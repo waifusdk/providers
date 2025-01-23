@@ -11,19 +11,6 @@ We believe in the open-source model and any contributions, suggestions, issues, 
 - 🛠 Consistent error handling
 - 📦 Modern TypeScript/JavaScript support
 
-## Available Providers
-
-1. Generics
-   1. Weather
-   2. Headlines
-2. Token
-   1. LunarCrush
-   2. Dexscreener
-   3. Whitepaper
-3. Networks
-   1. Solana
-   2. Ethereum
-
 ## Setup
 
 1. Install dependencies:
