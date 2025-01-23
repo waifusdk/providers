@@ -52,7 +52,7 @@ export class LunarCrushProvider extends BaseProvider {
 
   async getSocialData(topic: string) {
     try {
-      const response = await fetch(`${this.baseUrl}/public/topic/${topic}/v1`, {
+      const response = await fetch(`${this.baseUrl}/topic/${topic}/v1`, {
         headers: {
           Authorization: `Bearer ${this.apiKey}`,
         },

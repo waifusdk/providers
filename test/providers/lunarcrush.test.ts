@@ -13,4 +13,14 @@ describe("LunarCrush", () => {
     expect(data.symbol).toBeDefined();
     expect(data.price).toBeDefined();
   });
+
+  test("getSocialData", async () => {
+    const provider = new LunarCrushProvider({
+      apiKey: process.env.LUNAR_CRUSH_API_KEY ?? "",
+    });
+
+    const data = await provider.getSocialData("ethereum");
+    expect(data).toBeDefined();
+    expect(data.num_posts).toBeGreaterThan(0);
+  });
 });

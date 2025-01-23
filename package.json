@@ -1,14 +1,14 @@
 {
   "name": "@waifusdk/providers",
   "license": "MIT",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "release": "pnpm run build && changeset publish",
+    "release": "rm -rf ./dist && pnpm run build && changeset && changeset version && changeset publish",
     "lint": "tsc",
     "test": "vitest"
   },

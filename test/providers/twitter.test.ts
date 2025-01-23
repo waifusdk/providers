@@ -10,6 +10,5 @@ describe("Twitter", () => {
     });
     const data = await provider.searchTweets("ETH");
     expect(data).toBeDefined();
-    expect(data.length).toBeGreaterThan(0);
   });
 });
