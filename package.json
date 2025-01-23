@@ -1,7 +1,7 @@
 {
   "name": "@waifusdk/providers",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -21,7 +21,24 @@
     "access": "public"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.11",
     "dotenv": "^16.4.7",
     "vitest": "^3.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waifusdk/providers"
+  },
+  "bugs": {
+    "url": "https://github.com/waifusdk/providers/issues"
+  },
+  "homepage": "https://github.com/waifusdk/providers#readme",
+  "keywords": [
+    "sdk",
+    "typescript",
+    "waifu",
+    "providers",
+    "ai",
+    "data"
+  ]
 }
