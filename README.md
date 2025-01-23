@@ -2,7 +2,7 @@
 
 A collection of data providers which can be used to integrate with our SDK, designed to make integrating with different AI agent ecosystems easy and type-safe.
 
-We belive in the open-source model and any contributions, suggestions, issues, or improvements, are welcome!. Contributions are rewarded with $WAIFU tokens. Please refer to our github issues for more details.
+We believe in the open-source model and any contributions, suggestions, issues, or improvements, are welcome!. Contributions are rewarded with $WAIFU tokens. Please refer to our github issues for more details.
 
 ## Features
 
